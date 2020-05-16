@@ -54,6 +54,10 @@ namespace VirtualPet.Tests
         public void Pet_Should_Have_Species()
         {
             // Assert.NotNull(testPet.Species);
+
+            testPet.Species = "Pet Species";
+
+            Assert.Equal("Pet Species", testPet.Species);
         }
 
         [Fact]
@@ -78,6 +82,10 @@ namespace VirtualPet.Tests
         public void Pet_Should_Have_Hunger()
         {
             // Assert.NotNull(testPet.Hunger);
+
+            testPet.Hunger = 100;
+
+            Assert.Equal(100, testPet.Hunger);
         }
 
         [Fact]
@@ -92,6 +100,10 @@ namespace VirtualPet.Tests
         public void Pet_Should_Have_Boredom()
         {
             // Assert.NotNull(testPet.Boredom);
+
+            testPet.Boredom = 100;
+
+            Assert.Equal(100, testPet.Boredom);
         }
 
         [Fact]
@@ -106,6 +118,10 @@ namespace VirtualPet.Tests
         public void Pet_Should_Have_Health()
         {
             // Assert.NotNull(testPet.Health);
+
+            testPet.Health = 100;
+
+            Assert.Equal(100, testPet.Health);
         }
 
         [Fact]
