@@ -20,6 +20,13 @@ namespace VirtualPet
         //    set { this.name = value; }
         //}
 
+        public Pet()
+        {
+            Hunger = 50;
+            Boredom = 60;
+            Health = 30;
+        }
+
         public void SetName(string name)
         {
             Name = name;
@@ -38,6 +45,21 @@ namespace VirtualPet
         public string GetSpecies()
         {
             return Species;
+        }
+
+        public int GetHunger()
+        {
+            return Hunger;
+        }
+
+        public int GetBoredom()
+        {
+            return Boredom;
+        }
+        
+        public int GetHealth()
+        {
+            return Health;
         }
     }
 }
