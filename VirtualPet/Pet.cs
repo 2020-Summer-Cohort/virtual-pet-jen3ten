@@ -19,5 +19,15 @@ namespace VirtualPet
         //    get { return this.name; }
         //    set { this.name = value; }
         //}
+
+        public void SetName(string name)
+        {
+            Name = name;
+        }
+
+        public string GetName()
+        {
+            return Name;
+        }
     }
 }

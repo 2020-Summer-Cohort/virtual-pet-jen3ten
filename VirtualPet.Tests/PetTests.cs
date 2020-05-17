@@ -35,19 +35,19 @@ namespace VirtualPet.Tests
         [Fact]
         public void SetName_Should_Assign_Pet_Name_Property()
         {
-            //testPet.SetName("Fluffy");
+            testPet.SetName("Fluffy");
 
-            //Assert.Equal("Fluffy", testPet.Name);
+            Assert.Equal("Fluffy", testPet.Name);
         }
 
         [Fact]
         public void GetName_Should_Get_Pet_Name_Value()
         {
-            //testPet.SetName("Fido");
+            testPet.SetName("Fido");
 
-            //string testPetName = testPet.GetName();
+            string testPetName = testPet.GetName();
 
-            //Assert.Equal("Fido", testPetName);
+            Assert.Equal("Fido", testPetName);
         }
 
         [Fact]
