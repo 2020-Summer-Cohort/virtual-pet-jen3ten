@@ -66,5 +66,10 @@ namespace VirtualPet
         {
             Hunger -= 40;
         }
+
+        public void SeeDoctor()
+        {
+            Health += 30;
+        }
     }
 }
