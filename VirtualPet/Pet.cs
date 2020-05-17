@@ -65,11 +65,13 @@ namespace VirtualPet
         public void Feed()
         {
             Hunger -= 40;
+            Console.WriteLine($"You fed {Name}");
         }
 
         public void SeeDoctor()
         {
             Health += 30;
+            Console.WriteLine($"{Name} feels better now");
         }
 
         public void Play()
@@ -77,6 +79,7 @@ namespace VirtualPet
             Hunger += 10;
             Boredom -= 20;
             Health += 10;
+            Console.WriteLine($"{Name} loves playing with you");
         }
 
         public void Tick()
@@ -84,6 +87,14 @@ namespace VirtualPet
             Hunger += 5;
             Boredom += 5;
             Health -= 5;
+        }
+
+        public void ShowStatus()
+        {
+            Console.WriteLine($"{Name}'s status:");
+            Console.WriteLine($"HEALTH: {Health}");
+            Console.WriteLine($"HUNGER: {Hunger}");
+            Console.WriteLine($"BOREDOM: {Boredom}");
         }
     }
 }
