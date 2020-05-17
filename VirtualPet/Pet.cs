@@ -29,5 +29,15 @@ namespace VirtualPet
         {
             return Name;
         }
+
+        public void SetSpecies(string species)
+        {
+            Species = species;
+        }
+
+        public string GetSpecies()
+        {
+            return Species;
+        }
     }
 }

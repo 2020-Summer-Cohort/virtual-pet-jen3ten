@@ -63,19 +63,19 @@ namespace VirtualPet.Tests
         [Fact]
         public void SetSpecies_Should_Assign_Pet_Species_Property()
         {
-            //testPet.SetSpecies("Cat");
+            testPet.SetSpecies("Cat");
 
-            //Assert.Equal("Cat", testPet.Species);
+            Assert.Equal("Cat", testPet.Species);
         }
 
         [Fact]
         public void GetSpecies_Should_Get_Pet_Species_Value()
         {
-            //testPet.SetSpecies("Dog");
+            testPet.SetSpecies("Dog");
 
-            //string testPetSpecies = testPet.GetSpecies();
+            string testPetSpecies = testPet.GetSpecies();
 
-            //Assert.Equal("Dog", testPetSpecies);
+            Assert.Equal("Dog", testPetSpecies);
         }
 
         [Fact]
